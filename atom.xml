@@ -5,21 +5,21 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Imię Nazwisko</title>
- <link href="http://sigma.inf.ug.edu.pl/~login_na_sigmie/atom.xml" rel="self"/>
- <link href="http://sigma.inf.ug.edu.pl/~login_na_sigmie/"/>
+ <link href="http://sigma.inf.ug.edu.pl/~erauchfleisch/atom.xml" rel="self"/>
+ <link href="http://sigma.inf.ug.edu.pl/~erauchfleisch/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://sigma.ug.edu.pl/~login_na_sigmie/</id>
+ <id>http://sigma.ug.edu.pl/~erauchfleisch/</id>
  <author>
-   <name>Imię Nazwisko</name>
-   <email>login_na_sigmie@sigma.inf.ug.edu.pl</email>
+   <name>Emilia Rauchfleisch</name>
+   <email>erauchfleisch@sigma.inf.ug.edu.pl</email>
  </author>
 
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://sigma.inf.ug.edu.pl/~login_na_sigmie/{{ post.url }}"/>
+   <link href="http://sigma.inf.ug.edu.pl/~erauchfleisch/{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://sigma.ug.edu.pl/~login_na_sigmie/{{ post.id }}</id>
+   <id>http://sigma.ug.edu.pl/~erauchfleisch/{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
