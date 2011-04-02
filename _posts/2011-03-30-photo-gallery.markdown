@@ -31,7 +31,7 @@ stępia twoją wrażliwość, wyjaławia cię i odczłowiecza.
 </p>
 
 <p>
-	Za pomocą obiektywu postarałam się uchwycić ten niepowtarzalny, pełen urku klimat.
+	Za pomocą obiektywu postarałam się uchwycić ten niepowtarzalny, pełen uroku klimat.
 </p>
 
 
