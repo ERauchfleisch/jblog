@@ -41,8 +41,14 @@ html {
   /* http://www.hicksdesign.co.uk/journal/forcing-scrollbars-now-even-better */
   height: 100%; 
   margin-bottom: 1px;
-  background-color: #FEFEEB; 
-  margin: 0 auto 0 44px; 
+  background: url('images/tlo_bloga.jpg') repeat scroll 0 0 #EEEEEE ; 
+  margin: 0;
+}
+
+body {
+	background-color: transparent;
+	padding-right: 4px;
+	margin-left: 44px;
 }
 
 .site {
@@ -108,7 +114,7 @@ blockquote {
   margin-left: 572px;
   padding: 18px 22px 0 22px;
   position: absolute;
-  background: #F2F1D6;
+  background: #F0F8FF;
   -moz-border-radius: 4px;  
   color: #800;
 }
