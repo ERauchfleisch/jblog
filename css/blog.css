@@ -1,131 +1,106 @@
-/* http://www.colourlovers.com/palette/845780/No_idea */
-
 @font-face {
-  font-family: Cyklop;
-  src: url(Cyklop-Italic.eot);
-  src: local('☺'), 
-          url(Cyklop-Italic.otf) format("opentype");
+    font-family: 'CAITLYNRegular';
+    src: url('fonts/caitlin-webfont.eot');
+    src: url('fonts/caitlin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/caitlin-webfont.woff') format('woff'),
+         url('fonts/caitlin-webfont.ttf') format('truetype'),
+         url('fonts/caitlin-webfont.svg#CAITLYNRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-/* text logo */
-
-#header {
-  margin: 18px 0 0;
-}
-
-#links a {
-  text-decoration: none;
-  font: 100%/1 "Cyklop", "DejaVu Sans", sans-serif;
-  font-style: italic;
-  float: right;
-  margin-top: 6px;
-  color: #5A0405;
-}
-
-#logo {
-  font: 256%/1 "Cyklop", "DejaVu Sans", sans-serif;
-  font-style: italic;
-  margin-bottom: 24px;
-}
-
-#logo a {
-  text-decoration: none;
-  color: #5A0405;
-}
-
-#logo a:focus, #logo a:hover, #links a:focus, #links a:hover {
-  color: #321494;
-}
-
-html {
-  /* http://www.hicksdesign.co.uk/journal/forcing-scrollbars-now-even-better */
-  height: 100%; 
-  margin-bottom: 1px;
-  background: url('images/tlo_bloga.jpg') repeat scroll 0 0 #EEEEEE ; 
-  margin: 0;
+article, aside, dialog, figure, footer,
+header, hgroup, menu, nav, section {
+  display: block;
 }
 
 body {
-	background-color: transparent;
-	padding-right: 4px;
-	margin-left: 44px;
+  width: 100%;
+  background-image: url("images/tlo_bloga.png");
+  font-family: "DejaVu Sans", sans-serif;
 }
 
-.site {
-  background-color: white;
-  padding-right: 4px;
+#main_header {
+  width: 100%;
+  min-width: 1000px;
+  height: 48px;
+  background: url("images/header.png") repeat-x scroll 0 0 #1C87FF;
+  font-family: CAITLYNRegular;
+  font-size: 32px;
+  border-bottom: 1px solid #3377AA;
 }
 
-.title {
-  position: relative;
-  padding: 18px 0 0 0;
-  background-color: #FEFEEB; 
-}
-
-.title a {
-  position: absolute;
+#main_header a {
   text-decoration: none;
-  font-size: 100%;
-  font-weight: bold;
-  font-style: italic;
-  color: #FF2C2B;
-  top: 28px;
-  right: 0;
+  color: white;
+  margin-left: 20px;
 }
 
-#home, #post {
-  padding-top: 22px;
-  border: solid #888;
-  border-width: 1px 0 1px 1px;
+#wrapper, #posts {
+	background-color: rgba(190, 200, 255, 0.7);
+	width: 968px;
+	margin: 8px auto;
+	padding: 16px;
+	border: 1px solid #3366AA;
+	border-radius: 16px;
 }
 
-#home h1 {
-  font-size: 140%;
-  font-style: italic;
+h1 {
+	background-color: rgba(30, 165, 255, 0.25);
+	border-radius: 12px;
+	padding: 4px 8px;
+	font-size: 26px;
+	font-weight: bold;
+	color: #444444;
+	text-shadow: 0 0 0.3em #FFFFFF;
 }
 
-#post h1 {
-  font-size: 180%;
-  font-style: italic;
-  font-weight: bold;
-  margin-bottom: 22px;
-  color: #FF2C2B;
-}
-
-#post h2, #post h3, #home h1 {
-  color: #489690;
-}
-
-#home ul li {
+#wrapper article > ul li {
   list-style: none;
 }
 
-a[href^="http:"], a[href^="mailto:"], a[href^="http:"]:visited, 
-a[href$=".pdf"], a[href$=".doc"], a[href$=".xls"], a[href$=".rss"], 
-a[href$=".rdf"], a[href^="aim:"] {
-  padding:2px 16px 2px 0;
+article {
+	width: 900px;
+  	background-color: rgba(102, 153, 255, 0.6);
+  	border: 1px solid #3366AA;
+  	border-radius: 16px 16px 0 0;
+  	margin: 12px auto;
+  	padding: 0 8px 1px 8px;
 }
 
-blockquote {
+#wrapper article > h2, #posts article > h1 {
+  font-size: 26px;
+  color: #EEEEFF;
+  margin: 0;
+}
+
+#posts h2 {
+  font-size: 22px;
+  padding-bottom: 2px;
+  border-bottom: 2px dotted #489690;
+  width: 400px;
+}
+
+aside {
   font-size: 90%;
   font-family: "DejaVu Sans", sans-serif;
   font-style: normal;
   width: 253px;
-  margin-top: 6px;
-  margin-left: 572px;
+  float: right;
   padding: 18px 22px 0 22px;
-  position: absolute;
-  background: #F0F8FF;
-  -moz-border-radius: 4px;  
+  background-color: rgba(240, 240, 240, 0.5);
+  border-radius: 12px;  
   color: #800;
+  margin: 6px;
 }
 
-blockquote img {
+aside img {
   margin: 0 auto 12px auto;
   display: block;
 }
 
-blockquote p.author {
+aside p.author {
   margin-top: -1em;
   padding-right: 44px;
   color: #800;
@@ -133,38 +108,15 @@ blockquote p.author {
   text-align: right;
 }
 
-h2 {
-  font-size: 140%;
-  padding-bottom: 2px;
-  border-bottom: 2px dotted #489690;
-}
-
-h2, h3 {
-  color: #489690;
-}
-
-code {
-  margin: 0 2px;
-  padding: 0.06em 0.125em;
-  border: 1px solid #403B33;
-}
-
 pre code {
   border: none;
 }
 
 pre {
-  border-left: 9px solid #FD9945;
-  margin-left: -49px;
-  padding: 0 0 0 49px;
+  font-size: 90%;
+  border-left: 6px solid #1C87FF;
 }
 
-/* tabele */
-
-caption {
-  text-align: right;
-}
-
-li ul {
-  margin-bottom: 1.5em;
+.highlight {
+  background-color: rgba(240, 240, 240, 0.5);
 }

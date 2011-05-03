@@ -2,26 +2,28 @@
 layout: index
 title: MILA_Blog
 ---
+<header>
+  <h1>Home</h1>
+</header>
 
-<div id="home" class="prepend-1 span-13">
+  <p>
+    &bdquo; (&hellip;) w sensie idealnym, nigdy nie mamy do czynienia z historią rzeczywistą, 
+    ale zawsze z opowiedzianą, z przedstawioną, z taką, jaka &ndash; jak ktoś utrzymuje &ndash; 
+    była; taką, w jaką ktoś wierzy.&rdquo; (Ryszard Kapuścinski)
+  </p>
 
-  <blockquote>
-    <p>
-     I must thoroughly realize I know nothing at all; it is the only way to get ahead.
-    </p>
-    <p class="author">- Edgar Degas</p>
-  </blockquote>
-  
-  <h1>Posty</h1>
+<article>
+  <h2>Posty</h2>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-  
-  <h1>Projekty Open Source</h1>
+</article>
+
+<article>  
+  <h2>Projekty Open Source</h2>
   <ul class="posts">
     <li><a href="http://github.com/wbzyl/jblog/">jBlog</a> — szablon jekyll-bloga</li>
   </ul>
-
-</div>
+</article>
